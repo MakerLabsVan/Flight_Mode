@@ -1,0 +1,79 @@
+E:\MyVCProject\DMCSOFT_DOC\Client\IMC_Package\Example\C#_Example_2010\Example\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\MyVCProject\DMCSOFT_DOC\Client\IMC_Package\Example\C#_Example_2010\Example\obj\x86\Debug\Example.Properties.Resources.resources
+E:\MyVCProject\DMCSOFT_DOC\Client\IMC_Package\Example\C#_Example_2010\Example\obj\x86\Debug\GenerateResource.read.1.tlog
+E:\MyVCProject\DMCSOFT_DOC\Client\IMC_Package\Example\C#_Example_2010\Example\obj\x86\Debug\GenerateResource.write.1.tlog
+E:\MyVCProject\DMCSOFT_DOC\Client\IMC_Package\Example\C#_Example_2010\Example\bin\Debug\Example.exe
+E:\MyVCProject\DMCSOFT_DOC\Client\IMC_Package\Example\C#_Example_2010\Example\bin\Debug\Example.pdb
+E:\MyVCProject\DMCSOFT_DOC\Client\IMC_Package\Example\C#_Example_2010\Example\obj\x86\Debug\Example.exe
+E:\MyVCProject\DMCSOFT_DOC\Client\IMC_Package\Example\C#_Example_2010\Example\obj\x86\Debug\Example.pdb
+E:\MyVCProject\DMCSOFT_DOC\Client\IMC_Package\Example\C#_Example_2010\Example\obj\x86\Debug\Example.Form1.resources
+E:\MyVCProject\DMCSOFT_DOC\Client\IMC_Package\Example\C#_Example_2010\Example\bin\Debug\IMC_cfg.ini
+E:\MyVCProject\DMCSOFT_DOC\Client\IMC_Package\Example\C#_Example_2010\Example\bin\Debug\IMCnet.dll
+E:\MyVCProject\DMCSOFT_DOC\Client\IMC_Package\Example\C#_Example_2010\Example\bin\Debug\IMC_Pkg.dll
+E:\MyVCProject\DMCSOFT_DOC\Client\IMC_Package\Example\C#_Example_2010\Example\obj\x86\Debug\Example.P2P.resources
+E:\MyVCProject\DMCSOFT_DOC\Client\IMC_Package\Example\C#_Example_2010\Example\obj\x86\Debug\Example.Jog.resources
+E:\MyVCProject\DMCSOFT_DOC\Client\IMC_Package\Example\C#_Example_2010\Example\obj\x86\Debug\Example.Home.resources
+E:\MyVCProject\DMCSOFT_DOC\Client\IMC_Package\Example\C#_Example_2010\Example\obj\x86\Debug\Example.IO.resources
+E:\MyVCProject\DMCSOFT_DOC\Client\IMC_Package\Example\C#_Example_2010\Example\obj\x86\Debug\Example.Gear.resources
+E:\MyVCProject\DMCSOFT_DOC\Client\IMC_Package\Example\C#_Example_2010\Example\obj\x86\Debug\Example.Cfg.resources
+E:\MyVCProject\DMCSOFT_DOC\Client\IMC_Package\Example\C#_Example_2010\Example\obj\x86\Debug\Example.Event.resources
+E:\MyVCProject\DMCSOFT_DOC\Client\IMC_Package\Example\C#_Example_2010\Example\obj\x86\Debug\Example.InterP.resources
+E:\MyVCProject\DMCSOFT_DOC\Client\IMC_Package\Example\C#_2010_Example\Example\obj\x86\Debug\Example.exe
+E:\MyVCProject\DMCSOFT_DOC\Client\IMC_Package\Example\C#_2010_Example\Example\obj\x86\Debug\Example.pdb
+E:\MyVCProject\DMCSOFT_DOC\Client\IMC_Package\Example\C#_2010_Example\Example\bin\Debug\IMC_cfg.ini
+E:\MyVCProject\DMCSOFT_DOC\Client\IMC_Package\Example\C#_2010_Example\Example\bin\Debug\IMCnet.dll
+E:\MyVCProject\DMCSOFT_DOC\Client\IMC_Package\Example\C#_2010_Example\Example\bin\Debug\IMC_Pkg.dll
+E:\MyVCProject\DMCSOFT_DOC\Client\IMC_Package\Example\C#_2010_Example\Example\bin\Debug\Example.exe
+E:\MyVCProject\DMCSOFT_DOC\Client\IMC_Package\Example\C#_2010_Example\Example\bin\Debug\Example.pdb
+E:\MyVCProject\DMCSOFT_DOC\Client\IMC_Package\Example\C#_2010_Example\Example\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\MyVCProject\DMCSOFT_DOC\Client\IMC_Package\Example\C#_2010_Example\Example\obj\x86\Debug\Example.Cfg.resources
+E:\MyVCProject\DMCSOFT_DOC\Client\IMC_Package\Example\C#_2010_Example\Example\obj\x86\Debug\Example.Event.resources
+E:\MyVCProject\DMCSOFT_DOC\Client\IMC_Package\Example\C#_2010_Example\Example\obj\x86\Debug\Example.Form1.resources
+E:\MyVCProject\DMCSOFT_DOC\Client\IMC_Package\Example\C#_2010_Example\Example\obj\x86\Debug\Example.Gear.resources
+E:\MyVCProject\DMCSOFT_DOC\Client\IMC_Package\Example\C#_2010_Example\Example\obj\x86\Debug\Example.Home.resources
+E:\MyVCProject\DMCSOFT_DOC\Client\IMC_Package\Example\C#_2010_Example\Example\obj\x86\Debug\Example.InterP.resources
+E:\MyVCProject\DMCSOFT_DOC\Client\IMC_Package\Example\C#_2010_Example\Example\obj\x86\Debug\Example.IO.resources
+E:\MyVCProject\DMCSOFT_DOC\Client\IMC_Package\Example\C#_2010_Example\Example\obj\x86\Debug\Example.Jog.resources
+E:\MyVCProject\DMCSOFT_DOC\Client\IMC_Package\Example\C#_2010_Example\Example\obj\x86\Debug\Example.P2P.resources
+E:\MyVCProject\DMCSOFT_DOC\Client\IMC_Package\Example\C#_2010_Example\Example\obj\x86\Debug\Example.Properties.Resources.resources
+E:\MyVCProject\DMCSOFT_DOC\Client\IMC_Package\Example\C#_2010_Example\Example\obj\x86\Debug\GenerateResource.read.1.tlog
+E:\MyVCProject\DMCSOFT_DOC\Client\IMC_Package\Example\C#_2010_Example\Example\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Huancheng Yang\Desktop\Motor_controller\IMCNet_V3.3\IMCNet_V3.3\IMCApp\Example\C#_2010_Example\Example\obj\x86\Debug\Example.exe
+C:\Users\Huancheng Yang\Desktop\Motor_controller\IMCNet_V3.3\IMCNet_V3.3\IMCApp\Example\C#_2010_Example\Example\obj\x86\Debug\Example.pdb
+C:\Users\Huancheng Yang\Desktop\Motor_controller\IMCNet_V3.3\IMCNet_V3.3\IMCApp\Example\C#_2010_Example\Example\bin\Debug\IMC_cfg.ini
+C:\Users\Huancheng Yang\Desktop\Motor_controller\IMCNet_V3.3\IMCNet_V3.3\IMCApp\Example\C#_2010_Example\Example\bin\Debug\IMCnet.dll
+C:\Users\Huancheng Yang\Desktop\Motor_controller\IMCNet_V3.3\IMCNet_V3.3\IMCApp\Example\C#_2010_Example\Example\bin\Debug\IMC_Pkg.dll
+C:\Users\Huancheng Yang\Desktop\Motor_controller\IMCNet_V3.3\IMCNet_V3.3\IMCApp\Example\C#_2010_Example\Example\bin\Debug\Example.exe
+C:\Users\Huancheng Yang\Desktop\Motor_controller\IMCNet_V3.3\IMCNet_V3.3\IMCApp\Example\C#_2010_Example\Example\bin\Debug\Example.pdb
+C:\Users\Huancheng Yang\Desktop\Motor_controller\IMCNet_V3.3\IMCNet_V3.3\IMCApp\Example\C#_2010_Example\Example\obj\x86\Debug\Example.csprojResolveAssemblyReference.cache
+C:\Users\Huancheng Yang\Desktop\Motor_controller\IMCNet_V3.3\IMCNet_V3.3\IMCApp\Example\C#_2010_Example\Example\obj\x86\Debug\Example.Cfg.resources
+C:\Users\Huancheng Yang\Desktop\Motor_controller\IMCNet_V3.3\IMCNet_V3.3\IMCApp\Example\C#_2010_Example\Example\obj\x86\Debug\Example.Event.resources
+C:\Users\Huancheng Yang\Desktop\Motor_controller\IMCNet_V3.3\IMCNet_V3.3\IMCApp\Example\C#_2010_Example\Example\obj\x86\Debug\Example.Form1.resources
+C:\Users\Huancheng Yang\Desktop\Motor_controller\IMCNet_V3.3\IMCNet_V3.3\IMCApp\Example\C#_2010_Example\Example\obj\x86\Debug\Example.Gear.resources
+C:\Users\Huancheng Yang\Desktop\Motor_controller\IMCNet_V3.3\IMCNet_V3.3\IMCApp\Example\C#_2010_Example\Example\obj\x86\Debug\Example.Home.resources
+C:\Users\Huancheng Yang\Desktop\Motor_controller\IMCNet_V3.3\IMCNet_V3.3\IMCApp\Example\C#_2010_Example\Example\obj\x86\Debug\Example.InterP.resources
+C:\Users\Huancheng Yang\Desktop\Motor_controller\IMCNet_V3.3\IMCNet_V3.3\IMCApp\Example\C#_2010_Example\Example\obj\x86\Debug\Example.IO.resources
+C:\Users\Huancheng Yang\Desktop\Motor_controller\IMCNet_V3.3\IMCNet_V3.3\IMCApp\Example\C#_2010_Example\Example\obj\x86\Debug\Example.Jog.resources
+C:\Users\Huancheng Yang\Desktop\Motor_controller\IMCNet_V3.3\IMCNet_V3.3\IMCApp\Example\C#_2010_Example\Example\obj\x86\Debug\Example.P2P.resources
+C:\Users\Huancheng Yang\Desktop\Motor_controller\IMCNet_V3.3\IMCNet_V3.3\IMCApp\Example\C#_2010_Example\Example\obj\x86\Debug\Example.Properties.Resources.resources
+C:\Users\Huancheng Yang\Desktop\Motor_controller\IMCNet_V3.3\IMCNet_V3.3\IMCApp\Example\C#_2010_Example\Example\obj\x86\Debug\Example.csproj.GenerateResource.Cache
+C:\Users\Huancheng Yang\Desktop\Motor_controller\New folder (2)\C#_2010_Example\Example\obj\x86\Debug\Example.exe
+C:\Users\Huancheng Yang\Desktop\Motor_controller\New folder (2)\C#_2010_Example\Example\obj\x86\Debug\Example.pdb
+C:\Users\Huancheng Yang\Desktop\Motor_controller\New folder (2)\C#_2010_Example\Example\bin\Debug\IMC_cfg.ini
+C:\Users\Huancheng Yang\Desktop\Motor_controller\New folder (2)\C#_2010_Example\Example\bin\Debug\IMCnet.dll
+C:\Users\Huancheng Yang\Desktop\Motor_controller\New folder (2)\C#_2010_Example\Example\bin\Debug\IMC_Pkg.dll
+C:\Users\Huancheng Yang\Desktop\Motor_controller\New folder (2)\C#_2010_Example\Example\bin\Debug\Example.exe
+C:\Users\Huancheng Yang\Desktop\Motor_controller\New folder (2)\C#_2010_Example\Example\bin\Debug\Example.pdb
+C:\Users\Huancheng Yang\Desktop\Motor_controller\New folder (2)\C#_2010_Example\Example\obj\x86\Debug\Example.csprojResolveAssemblyReference.cache
+C:\Users\Huancheng Yang\Desktop\Motor_controller\New folder (2)\C#_2010_Example\Example\obj\x86\Debug\Example.Cfg.resources
+C:\Users\Huancheng Yang\Desktop\Motor_controller\New folder (2)\C#_2010_Example\Example\obj\x86\Debug\Example.Event.resources
+C:\Users\Huancheng Yang\Desktop\Motor_controller\New folder (2)\C#_2010_Example\Example\obj\x86\Debug\Example.Form1.resources
+C:\Users\Huancheng Yang\Desktop\Motor_controller\New folder (2)\C#_2010_Example\Example\obj\x86\Debug\Example.Gear.resources
+C:\Users\Huancheng Yang\Desktop\Motor_controller\New folder (2)\C#_2010_Example\Example\obj\x86\Debug\Example.Home.resources
+C:\Users\Huancheng Yang\Desktop\Motor_controller\New folder (2)\C#_2010_Example\Example\obj\x86\Debug\Example.InterP.resources
+C:\Users\Huancheng Yang\Desktop\Motor_controller\New folder (2)\C#_2010_Example\Example\obj\x86\Debug\Example.IO.resources
+C:\Users\Huancheng Yang\Desktop\Motor_controller\New folder (2)\C#_2010_Example\Example\obj\x86\Debug\Example.Jog.resources
+C:\Users\Huancheng Yang\Desktop\Motor_controller\New folder (2)\C#_2010_Example\Example\obj\x86\Debug\Example.P2P.resources
+C:\Users\Huancheng Yang\Desktop\Motor_controller\New folder (2)\C#_2010_Example\Example\obj\x86\Debug\Example.Properties.Resources.resources
+C:\Users\Huancheng Yang\Desktop\Motor_controller\New folder (2)\C#_2010_Example\Example\obj\x86\Debug\Example.csproj.GenerateResource.Cache
+C:\Users\Huancheng Yang\Desktop\Motor_controller\New folder (2)\C#_2010_Example\Example\obj\x86\Debug\Example.Flight.resources
