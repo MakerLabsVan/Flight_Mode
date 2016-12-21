@@ -14,6 +14,7 @@ namespace Example
     {
         int[] m_encp = new int[Global.MAX_NAXIS];
         int[] m1_encp = new int[Global.MAX_NAXIS];
+        int flight_level;
         public Flight()
         {
             InitializeComponent();
@@ -292,7 +293,7 @@ namespace Example
 
         private void textBox1_KeyDown(object sender, KeyEventArgs e)
         {
-            if (!((e.KeyCode >= Keys.D0 && e.KeyCode <= Keys.D9)||(e.KeyCode==Keys.Delete)))
+            if (!((e.KeyCode >= Keys.D0 && e.KeyCode <= Keys.D9)||(e.KeyCode==Keys.Back)))
             {
                 label1.Focus();
             }
@@ -307,12 +308,318 @@ namespace Example
                 if (!char.IsNumber(tString[i]))
                 {
                     MessageBox.Show("Please enter a valid number");
-                    textBox1.Text = "";
+                    textBox1.Text = "10";
                     return;
                 }
 
             }
             //If it get's here it's a valid number
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+            string tString = textBox2.Text;
+            if (tString.Trim() == "") return;
+            for (int i = 0; i < tString.Length; i++)
+            {
+                if (!char.IsNumber(tString[i]))
+                {
+                    MessageBox.Show("Please enter a valid number");
+                    textBox2.Text = "10";
+                    return;
+                }
+
+            }
+        }
+
+        private void textBox2_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (!((e.KeyCode >= Keys.D0 && e.KeyCode <= Keys.D9) || (e.KeyCode == Keys.Back)))
+            {
+                label1.Focus();
+            }
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+            string tString = textBox3.Text;
+            if (tString.Trim() == "") return;
+            for (int i = 0; i < tString.Length; i++)
+            {
+                if (!char.IsNumber(tString[i]))
+                {
+                    MessageBox.Show("Please enter a valid number");
+                    textBox3.Text = "20";
+                    return;
+                }
+
+            }
+        }
+
+        private void textBox3_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (!((e.KeyCode >= Keys.D0 && e.KeyCode <= Keys.D9) || (e.KeyCode == Keys.Back)))
+            {
+                label1.Focus();
+            }
+        }
+
+        private void button1_MouseDown(object sender, MouseEventArgs e)
+        {
+            double acc, svel, tvel;
+            IMC_Pkg.PKG_IMC_GetEncp(Global.g_handle, m_encp, Global.g_naxis);
+            acc = Convert.ToDouble(textBox1.Text);
+            svel = Convert.ToDouble(textBox2.Text);
+            tvel = Convert.ToDouble(textBox3.Text);
+            IMC_Pkg.PKG_IMC_SetAccel(Global.g_handle, acc, acc, 0);
+            IMC_Pkg.PKG_IMC_SetAccel(Global.g_handle, acc, acc, 1);
+            IMC_Pkg.PKG_IMC_SetAccel(Global.g_handle, acc, acc, 2);
+            if (m_encp[0] > 100)
+            {
+                IMC_Pkg.PKG_IMC_MoveVel(Global.g_handle, -svel, -tvel, 0);
+            }
+            else
+            {
+                IMC_Pkg.PKG_IMC_MoveVel(Global.g_handle, 0, 0, 0);
+            }
+            if (m_encp[1] < 140000)
+            {
+                IMC_Pkg.PKG_IMC_MoveVel(Global.g_handle, svel, tvel, 1);
+            }
+            else
+            {
+                IMC_Pkg.PKG_IMC_MoveVel(Global.g_handle, 0, 0, 1);
+            }
+            if (m_encp[2] < 140000)
+            {
+                IMC_Pkg.PKG_IMC_MoveVel(Global.g_handle, svel, tvel, 2);
+            }
+            else
+            {
+                IMC_Pkg.PKG_IMC_MoveVel(Global.g_handle, 0, 0, 2);
+            }
+        }
+
+        private void button2_MouseDown(object sender, MouseEventArgs e)
+        {
+            double acc, svel, tvel;
+            IMC_Pkg.PKG_IMC_GetEncp(Global.g_handle, m_encp, Global.g_naxis);
+            acc = Convert.ToDouble(textBox1.Text);
+            svel = Convert.ToDouble(textBox2.Text);
+            tvel = Convert.ToDouble(textBox3.Text);
+            IMC_Pkg.PKG_IMC_SetAccel(Global.g_handle, acc, acc, 0);
+            IMC_Pkg.PKG_IMC_SetAccel(Global.g_handle, acc, acc, 1);
+            IMC_Pkg.PKG_IMC_SetAccel(Global.g_handle, acc, acc, 2);
+            if (m_encp[0] < 140000)
+            {
+                IMC_Pkg.PKG_IMC_MoveVel(Global.g_handle, svel, tvel, 0);
+            }
+            else
+            {
+                IMC_Pkg.PKG_IMC_MoveVel(Global.g_handle, 0, 0, 0);
+            }
+            if (m_encp[1] > 100)
+            {
+                IMC_Pkg.PKG_IMC_MoveVel(Global.g_handle, -svel, -tvel, 1);
+            }
+            else
+            {
+                IMC_Pkg.PKG_IMC_MoveVel(Global.g_handle, 0, 0, 1);
+            }
+            if (m_encp[2] > 100)
+            {
+                IMC_Pkg.PKG_IMC_MoveVel(Global.g_handle, -svel, -tvel, 2);
+            }
+            else
+            {
+                IMC_Pkg.PKG_IMC_MoveVel(Global.g_handle, 0, 0, 2);
+            }
+        }
+
+        private void button3_MouseDown(object sender, MouseEventArgs e)
+        {
+            double acc, svel, tvel;
+            IMC_Pkg.PKG_IMC_GetEncp(Global.g_handle, m_encp, Global.g_naxis);
+            acc = Convert.ToDouble(textBox1.Text);
+            svel = Convert.ToDouble(textBox2.Text);
+            tvel = Convert.ToDouble(textBox3.Text);
+            IMC_Pkg.PKG_IMC_SetAccel(Global.g_handle, acc, acc, 1);
+            IMC_Pkg.PKG_IMC_SetAccel(Global.g_handle, acc, acc, 2);
+            if (m_encp[1] > 100)
+            {
+                IMC_Pkg.PKG_IMC_MoveVel(Global.g_handle, -svel, -tvel, 1);
+            }
+            else
+            {
+                IMC_Pkg.PKG_IMC_MoveVel(Global.g_handle, 0, 0, 1);
+            }
+            if (m_encp[2] < 140000)
+            {
+                IMC_Pkg.PKG_IMC_MoveVel(Global.g_handle, svel, tvel, 2);
+            }
+            else
+            {
+                IMC_Pkg.PKG_IMC_MoveVel(Global.g_handle, 0, 0, 2);
+            }
+        }
+
+        private void button4_MouseDown(object sender, MouseEventArgs e)
+        {
+            double acc, svel, tvel;
+            IMC_Pkg.PKG_IMC_GetEncp(Global.g_handle, m_encp, Global.g_naxis);
+            acc = Convert.ToDouble(textBox1.Text);
+            svel = Convert.ToDouble(textBox2.Text);
+            tvel = Convert.ToDouble(textBox3.Text);
+            IMC_Pkg.PKG_IMC_SetAccel(Global.g_handle, acc, acc, 1);
+            IMC_Pkg.PKG_IMC_SetAccel(Global.g_handle, acc, acc, 2);
+            if (m_encp[1] < 140000)
+            {
+                IMC_Pkg.PKG_IMC_MoveVel(Global.g_handle, svel, tvel, 1);
+            }
+            else
+            {
+                IMC_Pkg.PKG_IMC_MoveVel(Global.g_handle, 0, 0, 1);
+            }
+            if (m_encp[2] > 100)
+            {
+                IMC_Pkg.PKG_IMC_MoveVel(Global.g_handle, -svel, -tvel, 2);
+            }
+            else
+            {
+                IMC_Pkg.PKG_IMC_MoveVel(Global.g_handle, 0, 0, 2);
+            }
+        }
+
+        private void button5_MouseDown(object sender, MouseEventArgs e)
+        {
+            double acc, svel, tvel;
+            IMC_Pkg.PKG_IMC_GetEncp(Global.g_handle, m_encp, Global.g_naxis);
+            acc = Convert.ToDouble(textBox1.Text);
+            svel = Convert.ToDouble(textBox2.Text);
+            tvel = Convert.ToDouble(textBox3.Text);
+            IMC_Pkg.PKG_IMC_SetAccel(Global.g_handle, acc, acc, 0);
+            IMC_Pkg.PKG_IMC_SetAccel(Global.g_handle, acc, acc, 1);
+            IMC_Pkg.PKG_IMC_SetAccel(Global.g_handle, acc, acc, 2);
+            IMC_Pkg.PKG_IMC_MoveAbs(Global.g_handle, 70000, svel, tvel, 0, 0);
+            IMC_Pkg.PKG_IMC_MoveAbs(Global.g_handle, 70000, svel, tvel, 0, 1);
+            IMC_Pkg.PKG_IMC_MoveAbs(Global.g_handle, 70000, svel, tvel, 0, 2);
+        }
+
+        private void button6_MouseDown(object sender, MouseEventArgs e)
+        {
+            double acc, svel, tvel;
+            IMC_Pkg.PKG_IMC_GetEncp(Global.g_handle, m_encp, Global.g_naxis);
+            acc = Convert.ToDouble(textBox1.Text);
+            svel = Convert.ToDouble(textBox2.Text);
+            tvel = Convert.ToDouble(textBox3.Text);
+            IMC_Pkg.PKG_IMC_SetAccel(Global.g_handle, acc, acc, 0);
+            IMC_Pkg.PKG_IMC_SetAccel(Global.g_handle, acc, acc, 1);
+            IMC_Pkg.PKG_IMC_SetAccel(Global.g_handle, acc, acc, 2);
+            IMC_Pkg.PKG_IMC_MoveAbs(Global.g_handle, 0, svel, tvel, 0, 0);
+            IMC_Pkg.PKG_IMC_MoveAbs(Global.g_handle, 0, svel, tvel, 0, 1);
+            IMC_Pkg.PKG_IMC_MoveAbs(Global.g_handle, 0, svel, tvel, 0, 2);
+        }
+
+        private void button1_MouseUp(object sender, MouseEventArgs e)
+        {
+            double acc, svel, tvel;
+            IMC_Pkg.PKG_IMC_GetEncp(Global.g_handle, m_encp, Global.g_naxis);
+            acc = Convert.ToDouble(textBox1.Text);
+            svel = Convert.ToDouble(textBox2.Text);
+            tvel = Convert.ToDouble(textBox3.Text);
+            IMC_Pkg.PKG_IMC_SetAccel(Global.g_handle, acc, acc, 0);
+            IMC_Pkg.PKG_IMC_SetAccel(Global.g_handle, acc, acc, 1);
+            IMC_Pkg.PKG_IMC_SetAccel(Global.g_handle, acc, acc, 2);
+            IMC_Pkg.PKG_IMC_MoveVel(Global.g_handle, 0, 0, 0);
+            IMC_Pkg.PKG_IMC_MoveVel(Global.g_handle, 0, 0, 1);
+            IMC_Pkg.PKG_IMC_MoveVel(Global.g_handle, 0, 0, 2);
+            IMC_Pkg.PKG_IMC_MoveAbs(Global.g_handle, 70000, svel, tvel, 0, 0);
+            IMC_Pkg.PKG_IMC_MoveAbs(Global.g_handle, 70000, svel, tvel, 0, 1);
+            IMC_Pkg.PKG_IMC_MoveAbs(Global.g_handle, 70000, svel, tvel, 0, 2);
+        }
+
+        private void button2_MouseUp(object sender, MouseEventArgs e)
+        {
+            double acc, svel, tvel;
+            IMC_Pkg.PKG_IMC_GetEncp(Global.g_handle, m_encp, Global.g_naxis);
+            acc = Convert.ToDouble(textBox1.Text);
+            svel = Convert.ToDouble(textBox2.Text);
+            tvel = Convert.ToDouble(textBox3.Text);
+            IMC_Pkg.PKG_IMC_SetAccel(Global.g_handle, acc, acc, 0);
+            IMC_Pkg.PKG_IMC_SetAccel(Global.g_handle, acc, acc, 1);
+            IMC_Pkg.PKG_IMC_SetAccel(Global.g_handle, acc, acc, 2);
+            IMC_Pkg.PKG_IMC_MoveVel(Global.g_handle, 0, 0, 0);
+            IMC_Pkg.PKG_IMC_MoveVel(Global.g_handle, 0, 0, 1);
+            IMC_Pkg.PKG_IMC_MoveVel(Global.g_handle, 0, 0, 2);
+            IMC_Pkg.PKG_IMC_MoveAbs(Global.g_handle, 70000, svel, tvel, 0, 0);
+            IMC_Pkg.PKG_IMC_MoveAbs(Global.g_handle, 70000, svel, tvel, 0, 1);
+            IMC_Pkg.PKG_IMC_MoveAbs(Global.g_handle, 70000, svel, tvel, 0, 2);
+        }
+
+        private void button3_MouseUp(object sender, MouseEventArgs e)
+        {
+            double acc, svel, tvel;
+            IMC_Pkg.PKG_IMC_GetEncp(Global.g_handle, m_encp, Global.g_naxis);
+            acc = Convert.ToDouble(textBox1.Text);
+            svel = Convert.ToDouble(textBox2.Text);
+            tvel = Convert.ToDouble(textBox3.Text);
+            IMC_Pkg.PKG_IMC_SetAccel(Global.g_handle, acc, acc, 0);
+            IMC_Pkg.PKG_IMC_SetAccel(Global.g_handle, acc, acc, 1);
+            IMC_Pkg.PKG_IMC_SetAccel(Global.g_handle, acc, acc, 2);
+            IMC_Pkg.PKG_IMC_MoveVel(Global.g_handle, 0, 0, 0);
+            IMC_Pkg.PKG_IMC_MoveVel(Global.g_handle, 0, 0, 1);
+            IMC_Pkg.PKG_IMC_MoveVel(Global.g_handle, 0, 0, 2);
+            IMC_Pkg.PKG_IMC_MoveAbs(Global.g_handle, 70000, svel, tvel, 0, 0);
+            IMC_Pkg.PKG_IMC_MoveAbs(Global.g_handle, 70000, svel, tvel, 0, 1);
+            IMC_Pkg.PKG_IMC_MoveAbs(Global.g_handle, 70000, svel, tvel, 0, 2);
+        }
+
+        private void button4_MouseUp(object sender, MouseEventArgs e)
+        {
+            double acc, svel, tvel;
+            IMC_Pkg.PKG_IMC_GetEncp(Global.g_handle, m_encp, Global.g_naxis);
+            acc = Convert.ToDouble(textBox1.Text);
+            svel = Convert.ToDouble(textBox2.Text);
+            tvel = Convert.ToDouble(textBox3.Text);
+            IMC_Pkg.PKG_IMC_SetAccel(Global.g_handle, acc, acc, 0);
+            IMC_Pkg.PKG_IMC_SetAccel(Global.g_handle, acc, acc, 1);
+            IMC_Pkg.PKG_IMC_SetAccel(Global.g_handle, acc, acc, 2);
+            IMC_Pkg.PKG_IMC_MoveVel(Global.g_handle, 0, 0, 0);
+            IMC_Pkg.PKG_IMC_MoveVel(Global.g_handle, 0, 0, 1);
+            IMC_Pkg.PKG_IMC_MoveVel(Global.g_handle, 0, 0, 2);
+            IMC_Pkg.PKG_IMC_MoveAbs(Global.g_handle, 70000, svel, tvel, 0, 0);
+            IMC_Pkg.PKG_IMC_MoveAbs(Global.g_handle, 70000, svel, tvel, 0, 1);
+            IMC_Pkg.PKG_IMC_MoveAbs(Global.g_handle, 70000, svel, tvel, 0, 2);
+        }
+
+        private void button5_MouseUp(object sender, MouseEventArgs e)
+        {
+            double acc, svel, tvel;
+            IMC_Pkg.PKG_IMC_GetEncp(Global.g_handle, m_encp, Global.g_naxis);
+            acc = Convert.ToDouble(textBox1.Text);
+            svel = Convert.ToDouble(textBox2.Text);
+            tvel = Convert.ToDouble(textBox3.Text);
+            IMC_Pkg.PKG_IMC_SetAccel(Global.g_handle, acc, acc, 0);
+            IMC_Pkg.PKG_IMC_SetAccel(Global.g_handle, acc, acc, 1);
+            IMC_Pkg.PKG_IMC_SetAccel(Global.g_handle, acc, acc, 2);
+            IMC_Pkg.PKG_IMC_MoveVel(Global.g_handle, 0, 0, 0);
+            IMC_Pkg.PKG_IMC_MoveVel(Global.g_handle, 0, 0, 1);
+            IMC_Pkg.PKG_IMC_MoveVel(Global.g_handle, 0, 0, 2);
+        }
+
+        private void button6_MouseUp(object sender, MouseEventArgs e)
+        {
+            double acc, svel, tvel;
+            IMC_Pkg.PKG_IMC_GetEncp(Global.g_handle, m_encp, Global.g_naxis);
+            acc = Convert.ToDouble(textBox1.Text);
+            svel = Convert.ToDouble(textBox2.Text);
+            tvel = Convert.ToDouble(textBox3.Text);
+            IMC_Pkg.PKG_IMC_SetAccel(Global.g_handle, acc, acc, 0);
+            IMC_Pkg.PKG_IMC_SetAccel(Global.g_handle, acc, acc, 1);
+            IMC_Pkg.PKG_IMC_SetAccel(Global.g_handle, acc, acc, 2);
+            IMC_Pkg.PKG_IMC_MoveVel(Global.g_handle, 0, 0, 0);
+            IMC_Pkg.PKG_IMC_MoveVel(Global.g_handle, 0, 0, 1);
+            IMC_Pkg.PKG_IMC_MoveVel(Global.g_handle, 0, 0, 2);
         }
     }
 }

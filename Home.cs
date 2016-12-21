@@ -23,7 +23,7 @@ namespace Example
             int i;
             for (i = 0; i < Global.g_naxis; i++)
             {
-                comboBox1.Items.Add("轴" + i.ToString());
+                comboBox1.Items.Add("Axis" + i.ToString());
             }
             comboBox1.SelectedItem = comboBox1.SelectedIndex = 0;
             comboBox2.SelectedItem = comboBox2.SelectedIndex = 0;

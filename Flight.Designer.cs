@@ -55,6 +55,8 @@
             this.button1.TabIndex = 0;
             this.button1.Text = "↑";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button1_MouseDown);
+            this.button1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.button1_MouseUp);
             // 
             // button2
             // 
@@ -65,6 +67,8 @@
             this.button2.TabIndex = 1;
             this.button2.Text = "↓";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button2_MouseDown);
+            this.button2.MouseUp += new System.Windows.Forms.MouseEventHandler(this.button2_MouseUp);
             // 
             // button3
             // 
@@ -75,6 +79,8 @@
             this.button3.TabIndex = 2;
             this.button3.Text = "←";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button3_MouseDown);
+            this.button3.MouseUp += new System.Windows.Forms.MouseEventHandler(this.button3_MouseUp);
             // 
             // button4
             // 
@@ -85,6 +91,8 @@
             this.button4.TabIndex = 3;
             this.button4.Text = "→";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button4_MouseDown);
+            this.button4.MouseUp += new System.Windows.Forms.MouseEventHandler(this.button4_MouseUp);
             // 
             // button5
             // 
@@ -95,6 +103,8 @@
             this.button5.TabIndex = 4;
             this.button5.Text = "Up";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button5_MouseDown);
+            this.button5.MouseUp += new System.Windows.Forms.MouseEventHandler(this.button5_MouseUp);
             // 
             // button6
             // 
@@ -105,6 +115,8 @@
             this.button6.TabIndex = 5;
             this.button6.Text = "Down";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button6_MouseDown);
+            this.button6.MouseUp += new System.Windows.Forms.MouseEventHandler(this.button6_MouseUp);
             // 
             // label1
             // 
@@ -141,6 +153,8 @@
             this.textBox2.Size = new System.Drawing.Size(100, 31);
             this.textBox2.TabIndex = 9;
             this.textBox2.Text = "10";
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.textBox2.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox2_KeyDown);
             // 
             // Flightalert
             // 
@@ -168,6 +182,8 @@
             this.textBox3.Size = new System.Drawing.Size(100, 31);
             this.textBox3.TabIndex = 12;
             this.textBox3.Text = "20";
+            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            this.textBox3.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox3_KeyDown);
             // 
             // label4
             // 
