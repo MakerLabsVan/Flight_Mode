@@ -53,10 +53,10 @@ namespace Example
             }
             comboBox2.SelectedItem = comboBox2.SelectedIndex = 0;
 
-            listView1.Columns.Add("轴号", 70, HorizontalAlignment.Left);
-            listView1.Columns.Add("指令位置（脉冲）", 140, HorizontalAlignment.Left);
-            listView1.Columns.Add("机械位置（脉冲）", 140, HorizontalAlignment.Left);
-            listView1.Columns.Add("错误寄存器", 140, HorizontalAlignment.Left);
+            listView1.Columns.Add("Axis No:", 70, HorizontalAlignment.Left);
+            listView1.Columns.Add("Command Pos:", 140, HorizontalAlignment.Left);
+            listView1.Columns.Add("True Pos:", 140, HorizontalAlignment.Left);
+            listView1.Columns.Add("Error:", 140, HorizontalAlignment.Left);
         }
 
         //打开设备
@@ -70,13 +70,13 @@ namespace Example
 	        {
 		        IMC_Pkg.PKG_IMC_Close(Global.g_handle);
                 Global.g_handle = IntPtr.Zero;
-		        button1.Text = "打开设备";
+		        button1.Text = "Open Device";
 		        timer1.Enabled = false;
 	        }else{
                 Global.g_handle = IMC_Pkg.PKG_IMC_Open(netid, imcid);
                 if (Global.isOpen())
 		        {
-			        button1.Text = ("关闭设备");
+			        button1.Text = ("Close Device");
                     i = IMC_Pkg.PKG_IMC_InitCfg(Global.g_handle);
 			        if(i == 0)
 			        {
@@ -91,7 +91,7 @@ namespace Example
 				        listView1.Items.Clear();
                         for (i = 0; i < Global.g_naxis; i++)
 				        {		
-					        ListViewItem lvitem = listView1.Items.Add("轴" + i.ToString());
+					        ListViewItem lvitem = listView1.Items.Add("Axis" + i.ToString());
                             lvitem.SubItems.Add(("0"));
                             lvitem.SubItems.Add(("0"));
                             lvitem.SubItems.Add(("0x0000"));
@@ -104,7 +104,7 @@ namespace Example
                 }
                 else
                 {
-			        MessageBox.Show(("无法打开设备！\r\n\r\n请检查网卡和控制卡ID是否选择正确！"));
+                    MessageBox.Show(("Cannot Connect to Device！\r\n\r\nPlease Check Network Card and ID are chosen correctly！\r\n\r\nHint: \r\n\r\nNetwork Card: Realtek RTL8139/810x Family Fast Ethernet NIC     ID:0"));
 		        }
 	        }
 
@@ -115,7 +115,7 @@ namespace Example
             Cfg cfgForm = new Cfg();
             if (!Global.isOpen())
             {
-                MessageBox.Show("请先打开设备!");
+                MessageBox.Show("Please Connect Device First!!");
                 return;
             }
             cfgForm.ShowDialog(); 
@@ -126,7 +126,7 @@ namespace Example
             P2P posForm = new P2P();
             if (!Global.isOpen())
             {
-                MessageBox.Show("请先打开设备!");
+                MessageBox.Show("Please Connect Device First!!");
                 return;
             }
             posForm.ShowDialog(); 
@@ -137,7 +137,7 @@ namespace Example
             Jog jogForm = new Jog();
             if (!Global.isOpen())
             {
-                MessageBox.Show("请先打开设备!");
+                MessageBox.Show("Please Connect Device First!!");
                 return;
             }
             jogForm.ShowDialog(); 
@@ -148,7 +148,7 @@ namespace Example
             InterP interpForm = new InterP();
             if (!Global.isOpen())
             {
-                MessageBox.Show("请先打开设备!");
+                MessageBox.Show("Please Connect Device First!!");
                 return;
             }
             interpForm.ShowDialog(); 
@@ -159,7 +159,7 @@ namespace Example
             Home homeForm = new Home();
             if (!Global.isOpen())
             {
-                MessageBox.Show("请先打开设备!");
+                MessageBox.Show("Please Connect Device First!!");
                 return;
             }
             homeForm.ShowDialog(); 
@@ -170,7 +170,7 @@ namespace Example
             IO ioForm = new IO();
             if (!Global.isOpen())
             {
-                MessageBox.Show("请先打开设备!");
+                MessageBox.Show("Please Connect Device First!!");
                 return;
             }
             ioForm.ShowDialog(); 
@@ -181,7 +181,7 @@ namespace Example
             Gear gearForm = new Gear();
             if (!Global.isOpen())
             {
-                MessageBox.Show("请先打开设备!");
+                MessageBox.Show("Please Connect Device First!!");
                 return;
             }
             gearForm.ShowDialog(); 
@@ -192,7 +192,7 @@ namespace Example
             Event eventForm = new Event();
             if (!Global.isOpen())
             {
-                MessageBox.Show("请先打开设备!");
+                MessageBox.Show("Please Connect Device First!!");
                 return;
             }
             eventForm.ShowDialog(); 

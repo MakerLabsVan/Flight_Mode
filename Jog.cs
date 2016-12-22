@@ -120,7 +120,7 @@ namespace Example
             switch (e.KeyCode)
             {
                 case Keys.Q:
-                    if (m_encp[0] <= 80000)
+                    if (m_encp[0] <= 140000)
                     {
                         IMC_Pkg.PKG_IMC_SetAccel(Global.g_handle, acc, acc, 0);
                         IMC_Pkg.PKG_IMC_MoveVel(Global.g_handle, svel, tvel, 0);
@@ -145,7 +145,7 @@ namespace Example
                     }
                     break;
                 case Keys.W:
-                    if (m_encp[1] <= 80000)
+                    if (m_encp[1] <= 140000)
                     {
                         IMC_Pkg.PKG_IMC_SetAccel(Global.g_handle, acc, acc, 1);
                         IMC_Pkg.PKG_IMC_MoveVel(Global.g_handle, svel, tvel, 1);
@@ -171,7 +171,7 @@ namespace Example
                     break;
 
                 case Keys.E:
-                     if (m_encp[2] <= 80000)
+                     if (m_encp[2] <= 140000)
                     {
                         IMC_Pkg.PKG_IMC_SetAccel(Global.g_handle, acc, acc, 2);
                         IMC_Pkg.PKG_IMC_MoveVel(Global.g_handle, svel, tvel, 2);
@@ -251,7 +251,7 @@ namespace Example
             {
                 m1_encp[i] = m_encp[i];
                 IMC_Pkg.PKG_IMC_GetEncp(Global.g_handle, m_encp, Global.g_naxis);
-                if (m_encp[i] > 80000 && m_encp[i] > m1_encp[i])
+                if (m_encp[i] > 140000 && m_encp[i] > m1_encp[i])
                 {
                     IMC_Pkg.PKG_IMC_MoveVel(Global.g_handle, 0, 0, i);
                     Axisalert.Text += "Axis Max Limit Triggered!" + Environment.NewLine;

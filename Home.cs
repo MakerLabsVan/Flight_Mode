@@ -49,7 +49,7 @@ namespace Example
 
             if (!Global.isOpen())
             {
-                MessageBox.Show(("设备没有打开！"));
+                MessageBox.Show(("Device not Connected！"));
                 return;
             }
             //设置搜零轴的加减速度
@@ -107,7 +107,7 @@ namespace Example
             int axis = comboBox1.SelectedIndex;
             if (!Global.isOpen())
             {
-                MessageBox.Show(("设备没有打开！"));
+                MessageBox.Show(("Device not Connected！"));
                 return;
             }
             st = IMC_Pkg.PKG_IMC_HomeStop(Global.g_handle, axis);
@@ -126,7 +126,7 @@ namespace Example
             int pos = Convert.ToInt32(textBox7.Text);
             if (!Global.isOpen())
             {
-                MessageBox.Show(("设备没有打开！"));
+                MessageBox.Show(("Device not Connected！"));
                 return;
             }
             //设置当前位置为指定值

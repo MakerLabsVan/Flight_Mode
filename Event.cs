@@ -44,16 +44,16 @@ namespace Example
             comboBox4.SelectedItem = comboBox4.SelectedIndex = 1;
             comboBox5.SelectedItem = comboBox5.SelectedIndex = 0;
 
-            listView1.Columns.Add("输出端口号", 80, HorizontalAlignment.Right);
-            listView1.Columns.Add("值", 40, HorizontalAlignment.Left);
-            listView1.Columns.Add("输出端口号", 80, HorizontalAlignment.Right);
-            listView1.Columns.Add("值", 40, HorizontalAlignment.Left);
-            listView1.Columns.Add("输出端口号", 80, HorizontalAlignment.Right);
-            listView1.Columns.Add("值", 40, HorizontalAlignment.Left);
-            listView1.Columns.Add("输入端口号", 80, HorizontalAlignment.Right);
-            listView1.Columns.Add("值", 40, HorizontalAlignment.Left);
-            listView1.Columns.Add("输入端口号", 80, HorizontalAlignment.Right);
-            listView1.Columns.Add("值", 40, HorizontalAlignment.Left);
+            listView1.Columns.Add("Input Port No:", 80, HorizontalAlignment.Right);
+            listView1.Columns.Add("Value", 40, HorizontalAlignment.Left);
+            listView1.Columns.Add("Input Port No:", 80, HorizontalAlignment.Right);
+            listView1.Columns.Add("Value", 40, HorizontalAlignment.Left);
+            listView1.Columns.Add("Input Port No:", 80, HorizontalAlignment.Right);
+            listView1.Columns.Add("Value", 40, HorizontalAlignment.Left);
+            listView1.Columns.Add("Input Port No:", 80, HorizontalAlignment.Right);
+            listView1.Columns.Add("Value", 40, HorizontalAlignment.Left);
+            listView1.Columns.Add("Input Port No:", 80, HorizontalAlignment.Right);
+            listView1.Columns.Add("Value", 40, HorizontalAlignment.Left);
             for (i = 0; i < 16; i++)
             {
                 ListViewItem lvitem = listView1.Items.Add((i + 1).ToString("d2"));
@@ -110,7 +110,7 @@ namespace Example
 
 	        if(!Global.isOpen())
 	        {
-		        MessageBox.Show("设备没有打开！");
+		        MessageBox.Show("Device Not Connected！");
 		        return;
 	        }
             insel = comboBox1.SelectedIndex;
@@ -239,7 +239,7 @@ namespace Example
 
 	        if(!Global.isOpen())
 	        {
-		        MessageBox.Show(("设备没有打开！"));
+		        MessageBox.Show(("Device Not Connected！"));
 		        return;
 	        }
             insel = comboBox1.SelectedIndex;

@@ -69,7 +69,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(151, 40);
+            this.label1.Location = new System.Drawing.Point(171, 40);
             this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(125, 25);
@@ -79,12 +79,12 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(162, 98);
+            this.label2.Location = new System.Drawing.Point(151, 98);
             this.label2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(117, 25);
+            this.label2.Size = new System.Drawing.Size(152, 25);
             this.label2.TabIndex = 10;
-            this.label2.Text = "搜零方式：";
+            this.label2.Text = "Home Method:";
             // 
             // comboBox2
             // 
@@ -196,92 +196,92 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(598, 44);
+            this.label3.Location = new System.Drawing.Point(460, 40);
             this.label3.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(117, 25);
+            this.label3.Size = new System.Drawing.Size(268, 25);
             this.label3.TabIndex = 10;
-            this.label3.Text = "搜零方向：";
+            this.label3.Text = "Searching Home Direction:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(598, 98);
+            this.label4.Location = new System.Drawing.Point(618, 95);
             this.label4.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(117, 25);
+            this.label4.Size = new System.Drawing.Size(115, 25);
             this.label4.TabIndex = 10;
-            this.label4.Text = "开关边沿：";
+            this.label4.Text = "Rise edge:";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(138, 152);
+            this.label5.Location = new System.Drawing.Point(81, 149);
             this.label5.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(138, 25);
+            this.label5.Size = new System.Drawing.Size(215, 25);
             this.label5.TabIndex = 10;
-            this.label5.Text = "搜零高速度：";
+            this.label5.Text = "Home Speed(High)：";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(138, 208);
+            this.label6.Location = new System.Drawing.Point(80, 208);
             this.label6.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(138, 25);
+            this.label6.Size = new System.Drawing.Size(216, 25);
             this.label6.TabIndex = 10;
-            this.label6.Text = "搜零低速度：";
+            this.label6.Text = "Home Speed (Low)：";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(138, 265);
+            this.label7.Location = new System.Drawing.Point(93, 264);
             this.label7.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(138, 25);
+            this.label7.Size = new System.Drawing.Size(199, 25);
             this.label7.TabIndex = 10;
-            this.label7.Text = "搜零加速度：";
+            this.label7.Text = "Home Acceleration:";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(42, 321);
+            this.label8.Location = new System.Drawing.Point(181, 321);
             this.label8.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(222, 25);
+            this.label8.Size = new System.Drawing.Size(111, 25);
             this.label8.TabIndex = 10;
-            this.label8.Text = "移动停止位置的速度：";
+            this.label8.Text = "Home Vel:";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(598, 165);
+            this.label9.Location = new System.Drawing.Point(622, 158);
             this.label9.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(117, 25);
+            this.label9.Size = new System.Drawing.Size(106, 25);
             this.label9.TabIndex = 10;
-            this.label9.Text = "开关位置：";
+            this.label9.Text = "Start Pos:";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(598, 221);
+            this.label10.Location = new System.Drawing.Point(622, 214);
             this.label10.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(117, 25);
+            this.label10.Size = new System.Drawing.Size(105, 25);
             this.label10.TabIndex = 10;
-            this.label10.Text = "停止位置：";
+            this.label10.Text = "Stop Pos:";
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(138, 471);
+            this.label11.Location = new System.Drawing.Point(102, 468);
             this.label11.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(117, 25);
+            this.label11.Size = new System.Drawing.Size(201, 25);
             this.label11.TabIndex = 10;
-            this.label11.Text = "当前位置：";
+            this.label11.Text = "Set Current Pos To:";
             // 
             // button1
             // 
@@ -290,7 +290,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(214, 48);
             this.button1.TabIndex = 13;
-            this.button1.Text = "搜零";
+            this.button1.Text = "Home";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -301,30 +301,30 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(214, 48);
             this.button2.TabIndex = 13;
-            this.button2.Text = "停止搜零";
+            this.button2.Text = "Stop Homing";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(532, 465);
+            this.button3.Location = new System.Drawing.Point(532, 456);
             this.button3.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(214, 48);
             this.button3.TabIndex = 13;
-            this.button3.Text = "设置位置";
+            this.button3.Text = "Set Pos";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(250, 544);
+            this.label12.Location = new System.Drawing.Point(213, 544);
             this.label12.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(417, 25);
+            this.label12.Size = new System.Drawing.Size(457, 25);
             this.label12.TabIndex = 14;
-            this.label12.Text = "注：速度单位为脉冲/毫秒，位置单位为脉冲";
+            this.label12.Text = "Speed Unit in Pulse/sec, Position Unit in Pulse";
             // 
             // Home
             // 
@@ -361,7 +361,7 @@
             this.Name = "Home";
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "搜零";
+            this.Text = "Home";
             this.Load += new System.EventHandler(this.Home_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

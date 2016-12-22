@@ -70,66 +70,74 @@
             this.groupBox1.Controls.Add(this.comboBox4);
             this.groupBox1.Controls.Add(this.comboBox3);
             this.groupBox1.Controls.Add(this.comboBox1);
-            this.groupBox1.Location = new System.Drawing.Point(12, 12);
+            this.groupBox1.Location = new System.Drawing.Point(24, 25);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(606, 116);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.groupBox1.Size = new System.Drawing.Size(1212, 242);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "事件1";
+            this.groupBox1.Text = "Event 1";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(451, 47);
+            this.button1.Location = new System.Drawing.Point(902, 98);
+            this.button1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(93, 23);
+            this.button1.Size = new System.Drawing.Size(186, 48);
             this.button1.TabIndex = 2;
-            this.button1.Text = "安装事件";
+            this.button1.Text = "Install Event";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(216, 26);
+            this.label2.Location = new System.Drawing.Point(432, 54);
+            this.label2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(77, 12);
+            this.label2.Size = new System.Drawing.Size(142, 25);
             this.label2.TabIndex = 1;
-            this.label2.Text = "输出端口号：";
+            this.label2.Text = "Output Port：";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(60, 84);
+            this.label4.Location = new System.Drawing.Point(94, 172);
+            this.label4.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(233, 12);
+            this.label4.Size = new System.Drawing.Size(482, 25);
             this.label4.TabIndex = 1;
-            this.label4.Text = "输入端口的状态是断开时，设置输出端口：";
+            this.label4.Text = "When Input Port is disconnected, set Output port:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(60, 58);
+            this.label3.Location = new System.Drawing.Point(120, 121);
+            this.label3.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(233, 12);
+            this.label3.Size = new System.Drawing.Size(456, 25);
             this.label3.TabIndex = 1;
-            this.label3.Text = "输入端口的状态是闭合时，设置输出端口：";
+            this.label3.Text = "When Input Port is connected, set Output Port:";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(38, 23);
+            this.label1.Location = new System.Drawing.Point(76, 48);
+            this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(77, 12);
+            this.label1.Size = new System.Drawing.Size(125, 25);
             this.label1.TabIndex = 1;
-            this.label1.Text = "输入端口号：";
+            this.label1.Text = "Input Port：";
             // 
             // comboBox2
             // 
             this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(299, 23);
+            this.comboBox2.Location = new System.Drawing.Point(598, 48);
+            this.comboBox2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(66, 20);
+            this.comboBox2.Size = new System.Drawing.Size(128, 33);
             this.comboBox2.TabIndex = 0;
             // 
             // comboBox4
@@ -139,9 +147,10 @@
             this.comboBox4.Items.AddRange(new object[] {
             "闭合",
             "断开"});
-            this.comboBox4.Location = new System.Drawing.Point(299, 81);
+            this.comboBox4.Location = new System.Drawing.Point(598, 169);
+            this.comboBox4.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(66, 20);
+            this.comboBox4.Size = new System.Drawing.Size(128, 33);
             this.comboBox4.TabIndex = 0;
             // 
             // comboBox3
@@ -151,18 +160,20 @@
             this.comboBox3.Items.AddRange(new object[] {
             "闭合",
             "断开"});
-            this.comboBox3.Location = new System.Drawing.Point(299, 55);
+            this.comboBox3.Location = new System.Drawing.Point(598, 115);
+            this.comboBox3.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(66, 20);
+            this.comboBox3.Size = new System.Drawing.Size(128, 33);
             this.comboBox3.TabIndex = 0;
             // 
             // comboBox1
             // 
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(121, 20);
+            this.comboBox1.Location = new System.Drawing.Point(242, 42);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(66, 20);
+            this.comboBox1.Size = new System.Drawing.Size(128, 33);
             this.comboBox1.TabIndex = 0;
             // 
             // groupBox2
@@ -178,137 +189,153 @@
             this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Controls.Add(this.label8);
             this.groupBox2.Controls.Add(this.comboBox5);
-            this.groupBox2.Location = new System.Drawing.Point(12, 143);
+            this.groupBox2.Location = new System.Drawing.Point(24, 298);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(606, 116);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.groupBox2.Size = new System.Drawing.Size(1212, 242);
             this.groupBox2.TabIndex = 0;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "事件2";
+            this.groupBox2.Text = "Event 2";
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(451, 80);
+            this.button3.Location = new System.Drawing.Point(902, 167);
+            this.button3.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(93, 23);
+            this.button3.Size = new System.Drawing.Size(246, 48);
             this.button3.TabIndex = 2;
-            this.button3.Text = "启动匀速运动";
+            this.button3.Text = "Start Uniform Motion";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(451, 20);
+            this.button2.Location = new System.Drawing.Point(902, 42);
+            this.button2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(93, 23);
+            this.button2.Size = new System.Drawing.Size(186, 48);
             this.button2.TabIndex = 2;
-            this.button2.Text = "安装事件";
+            this.button2.Text = "Install Event";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(338, 82);
+            this.textBox3.Location = new System.Drawing.Point(728, 173);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(83, 21);
+            this.textBox3.Size = new System.Drawing.Size(162, 31);
             this.textBox3.TabIndex = 2;
             this.textBox3.Text = "1.0";
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(132, 82);
+            this.textBox2.Location = new System.Drawing.Point(264, 171);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(74, 21);
+            this.textBox2.Size = new System.Drawing.Size(144, 31);
             this.textBox2.TabIndex = 2;
             this.textBox2.Text = "10.0";
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(169, 48);
+            this.textBox1.Location = new System.Drawing.Point(338, 100);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(56, 21);
+            this.textBox1.Size = new System.Drawing.Size(108, 31);
             this.textBox1.TabIndex = 2;
             this.textBox1.Text = "100000";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(38, 85);
+            this.label6.Location = new System.Drawing.Point(29, 176);
+            this.label6.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(89, 12);
+            this.label6.Size = new System.Drawing.Size(231, 25);
             this.label6.TabIndex = 1;
-            this.label6.Text = "匀速运动速度：";
+            this.label6.Text = "Uniform Motion Speed:";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(231, 85);
+            this.label9.Location = new System.Drawing.Point(432, 176);
+            this.label9.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(101, 12);
+            this.label9.Size = new System.Drawing.Size(288, 25);
             this.label9.TabIndex = 1;
-            this.label9.Text = "匀速运动加速度：";
+            this.label9.Text = "Uniform Motion Acceleration:";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(231, 51);
+            this.label5.Location = new System.Drawing.Point(458, 106);
+            this.label5.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(299, 12);
+            this.label5.Size = new System.Drawing.Size(573, 25);
             this.label5.TabIndex = 1;
-            this.label5.Text = "时，减速停止匀速运动，并在开始减速时将位置值变为0";
+            this.label5.Text = ",deaccelerate and stop the motion,and set the position to 0";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(38, 51);
+            this.label7.Location = new System.Drawing.Point(54, 103);
+            this.label7.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(125, 12);
+            this.label7.Size = new System.Drawing.Size(272, 25);
             this.label7.TabIndex = 1;
-            this.label7.Text = "当匀速运动的位置大于";
+            this.label7.Text = "When the position exceeds";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(38, 23);
+            this.label8.Location = new System.Drawing.Point(29, 50);
+            this.label8.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(89, 12);
+            this.label8.Size = new System.Drawing.Size(225, 25);
             this.label8.TabIndex = 1;
-            this.label8.Text = "匀速运动轴号：";
+            this.label8.Text = "Uniform Motion Axis：";
             // 
             // comboBox5
             // 
             this.comboBox5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Location = new System.Drawing.Point(133, 20);
+            this.comboBox5.Location = new System.Drawing.Point(266, 42);
+            this.comboBox5.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(66, 20);
+            this.comboBox5.Size = new System.Drawing.Size(128, 33);
             this.comboBox5.TabIndex = 0;
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(181, 265);
+            this.button4.Location = new System.Drawing.Point(362, 552);
+            this.button4.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(163, 23);
+            this.button4.Size = new System.Drawing.Size(326, 48);
             this.button4.TabIndex = 2;
-            this.button4.Text = "同时安装事件1和事件2";
+            this.button4.Text = "Install Event 1&2 Together";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(394, 265);
+            this.button5.Location = new System.Drawing.Point(788, 552);
+            this.button5.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(93, 23);
+            this.button5.Size = new System.Drawing.Size(186, 48);
             this.button5.TabIndex = 2;
-            this.button5.Text = "卸载事件";
+            this.button5.Text = "Uninstall Event";
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // listView1
             // 
             this.listView1.GridLines = true;
-            this.listView1.Location = new System.Drawing.Point(12, 297);
+            this.listView1.Location = new System.Drawing.Point(24, 619);
+            this.listView1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(606, 232);
+            this.listView1.Size = new System.Drawing.Size(1208, 479);
             this.listView1.TabIndex = 5;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -320,14 +347,15 @@
             // 
             // Event
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(630, 542);
+            this.ClientSize = new System.Drawing.Size(1260, 1129);
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Name = "Event";
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

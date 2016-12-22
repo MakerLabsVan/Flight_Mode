@@ -94,7 +94,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(200, 48);
             this.button1.TabIndex = 2;
-            this.button1.Text = "Open Device";
+            this.button1.Text = "Connect Device";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -182,7 +182,7 @@
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(216, 48);
             this.button9.TabIndex = 2;
-            this.button9.Text = "事件";
+            this.button9.Text = "Event";
             this.button9.UseVisualStyleBackColor = true;
             this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
