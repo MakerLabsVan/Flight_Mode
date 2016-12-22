@@ -25,7 +25,7 @@ namespace Example
             int i;
             for (i = 0; i < Global.g_naxis; i++)
             {
-                comboBox1.Items.Add("轴" + i.ToString());
+                comboBox1.Items.Add("Axis" + i.ToString());
             }
             comboBox1.SelectedItem = comboBox1.SelectedIndex = 0;
 
@@ -67,7 +67,7 @@ namespace Example
             int axis = comboBox1.SelectedIndex;
             if (!Global.isOpen())
             {
-                MessageBox.Show(("设备没有打开！"));
+                MessageBox.Show(("Device not Connected！"));
                 return;
             }
             st = IMC_Pkg.PKG_IMC_MoveVel(Global.g_handle, 0, 0, axis);

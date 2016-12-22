@@ -169,9 +169,9 @@ namespace Example
                         {
                             IMC_Fun.Jog(0, 2);
                         }*/
-                        IMC_Pkg.PKG_IMC_MoveAbs(Global.g_handle, 70000, svel, tvel, 0, 0);
-                        IMC_Pkg.PKG_IMC_MoveAbs(Global.g_handle, 70000, svel, tvel, 0, 1);
-                        IMC_Pkg.PKG_IMC_MoveAbs(Global.g_handle, 70000, svel, tvel, 0, 2);
+                        IMC_Pkg.PKG_IMC_MoveAbs(Global.g_handle, 140000, svel, tvel, 0, 0);
+                        IMC_Pkg.PKG_IMC_MoveAbs(Global.g_handle, 140000, svel, tvel, 0, 1);
+                        IMC_Pkg.PKG_IMC_MoveAbs(Global.g_handle, 140000, svel, tvel, 0, 2);
                         break;
                     case Keys.X:
                         IMC_Pkg.PKG_IMC_SetAccel(Global.g_handle, acc, acc, 0);
@@ -240,33 +240,33 @@ namespace Example
                         IMC_Pkg.PKG_IMC_MoveVel(Global.g_handle, 0, 0, 0);
                         IMC_Pkg.PKG_IMC_MoveVel(Global.g_handle, 0, 0, 1);
                         IMC_Pkg.PKG_IMC_MoveVel(Global.g_handle, 0, 0, 2);
-                        IMC_Pkg.PKG_IMC_MoveAbs(Global.g_handle, 70000, svel, tvel, 0, 0);
-                        IMC_Pkg.PKG_IMC_MoveAbs(Global.g_handle, 70000, svel, tvel, 0, 1);
-                        IMC_Pkg.PKG_IMC_MoveAbs(Global.g_handle, 70000, svel, tvel, 0, 2);
+                        IMC_Pkg.PKG_IMC_MoveAbs(Global.g_handle, flight_level, svel, tvel, 0, 0);
+                        IMC_Pkg.PKG_IMC_MoveAbs(Global.g_handle, flight_level, svel, tvel, 0, 1);
+                        IMC_Pkg.PKG_IMC_MoveAbs(Global.g_handle, flight_level, svel, tvel, 0, 2);
                         break;
                     case Keys.A:
                         IMC_Pkg.PKG_IMC_MoveVel(Global.g_handle, 0, 0, 0);
                         IMC_Pkg.PKG_IMC_MoveVel(Global.g_handle, 0, 0, 1);
                         IMC_Pkg.PKG_IMC_MoveVel(Global.g_handle, 0, 0, 2);
-                        IMC_Pkg.PKG_IMC_MoveAbs(Global.g_handle, 70000, svel, tvel, 0, 0);
-                        IMC_Pkg.PKG_IMC_MoveAbs(Global.g_handle, 70000, svel, tvel, 0, 1);
-                        IMC_Pkg.PKG_IMC_MoveAbs(Global.g_handle, 70000, svel, tvel, 0, 2);
+                        IMC_Pkg.PKG_IMC_MoveAbs(Global.g_handle, flight_level, svel, tvel, 0, 0);
+                        IMC_Pkg.PKG_IMC_MoveAbs(Global.g_handle, flight_level, svel, tvel, 0, 1);
+                        IMC_Pkg.PKG_IMC_MoveAbs(Global.g_handle, flight_level, svel, tvel, 0, 2);
                         break;
                     case Keys.S:
                         IMC_Pkg.PKG_IMC_MoveVel(Global.g_handle, 0, 0, 0);
                         IMC_Pkg.PKG_IMC_MoveVel(Global.g_handle, 0, 0, 1);
                         IMC_Pkg.PKG_IMC_MoveVel(Global.g_handle, 0, 0, 2);
-                        IMC_Pkg.PKG_IMC_MoveAbs(Global.g_handle, 70000, svel, tvel, 0, 0);
-                        IMC_Pkg.PKG_IMC_MoveAbs(Global.g_handle, 70000, svel, tvel, 0, 1);
-                        IMC_Pkg.PKG_IMC_MoveAbs(Global.g_handle, 70000, svel, tvel, 0, 2);
+                        IMC_Pkg.PKG_IMC_MoveAbs(Global.g_handle, flight_level, svel, tvel, 0, 0);
+                        IMC_Pkg.PKG_IMC_MoveAbs(Global.g_handle, flight_level, svel, tvel, 0, 1);
+                        IMC_Pkg.PKG_IMC_MoveAbs(Global.g_handle, flight_level, svel, tvel, 0, 2);
                         break;
                     case Keys.D:
                         IMC_Pkg.PKG_IMC_MoveVel(Global.g_handle, 0, 0, 0);
                         IMC_Pkg.PKG_IMC_MoveVel(Global.g_handle, 0, 0, 1);
                         IMC_Pkg.PKG_IMC_MoveVel(Global.g_handle, 0, 0, 2);
-                        IMC_Pkg.PKG_IMC_MoveAbs(Global.g_handle, 70000, svel, tvel, 0, 0);
-                        IMC_Pkg.PKG_IMC_MoveAbs(Global.g_handle, 70000, svel, tvel, 0, 1);
-                        IMC_Pkg.PKG_IMC_MoveAbs(Global.g_handle, 70000, svel, tvel, 0, 2);
+                        IMC_Pkg.PKG_IMC_MoveAbs(Global.g_handle, flight_level, svel, tvel, 0, 0);
+                        IMC_Pkg.PKG_IMC_MoveAbs(Global.g_handle, flight_level, svel, tvel, 0, 1);
+                        IMC_Pkg.PKG_IMC_MoveAbs(Global.g_handle, flight_level, svel, tvel, 0, 2);
                         break;
                     case Keys.Z:
                         IMC_Pkg.PKG_IMC_P2Pstop(Global.g_handle, 0);
@@ -275,6 +275,7 @@ namespace Example
                         IMC_Pkg.PKG_IMC_MoveVel(Global.g_handle, 0, 0, 0);
                         IMC_Pkg.PKG_IMC_MoveVel(Global.g_handle, 0, 0, 1);
                         IMC_Pkg.PKG_IMC_MoveVel(Global.g_handle, 0, 0, 2);
+                        flight_level = m_encp.Max();
                         break;
                     case Keys.X:
                         IMC_Pkg.PKG_IMC_P2Pstop(Global.g_handle, 0);
@@ -283,6 +284,7 @@ namespace Example
                         IMC_Pkg.PKG_IMC_MoveVel(Global.g_handle, 0, 0, 0);
                         IMC_Pkg.PKG_IMC_MoveVel(Global.g_handle, 0, 0, 1);
                         IMC_Pkg.PKG_IMC_MoveVel(Global.g_handle, 0, 0, 2);
+                        flight_level = m_encp.Max();
                         break;
                 }
             }
@@ -518,9 +520,9 @@ namespace Example
             IMC_Pkg.PKG_IMC_SetAccel(Global.g_handle, acc, acc, 0);
             IMC_Pkg.PKG_IMC_SetAccel(Global.g_handle, acc, acc, 1);
             IMC_Pkg.PKG_IMC_SetAccel(Global.g_handle, acc, acc, 2);
-            IMC_Pkg.PKG_IMC_MoveAbs(Global.g_handle, 70000, svel, tvel, 0, 0);
-            IMC_Pkg.PKG_IMC_MoveAbs(Global.g_handle, 70000, svel, tvel, 0, 1);
-            IMC_Pkg.PKG_IMC_MoveAbs(Global.g_handle, 70000, svel, tvel, 0, 2);
+            IMC_Pkg.PKG_IMC_MoveAbs(Global.g_handle, 140000, svel, tvel, 0, 0);
+            IMC_Pkg.PKG_IMC_MoveAbs(Global.g_handle, 140000, svel, tvel, 0, 1);
+            IMC_Pkg.PKG_IMC_MoveAbs(Global.g_handle, 140000, svel, tvel, 0, 2);
         }
 
         private void button6_MouseDown(object sender, MouseEventArgs e)
@@ -551,9 +553,9 @@ namespace Example
             IMC_Pkg.PKG_IMC_MoveVel(Global.g_handle, 0, 0, 0);
             IMC_Pkg.PKG_IMC_MoveVel(Global.g_handle, 0, 0, 1);
             IMC_Pkg.PKG_IMC_MoveVel(Global.g_handle, 0, 0, 2);
-            IMC_Pkg.PKG_IMC_MoveAbs(Global.g_handle, 70000, svel, tvel, 0, 0);
-            IMC_Pkg.PKG_IMC_MoveAbs(Global.g_handle, 70000, svel, tvel, 0, 1);
-            IMC_Pkg.PKG_IMC_MoveAbs(Global.g_handle, 70000, svel, tvel, 0, 2);
+            IMC_Pkg.PKG_IMC_MoveAbs(Global.g_handle, flight_level, svel, tvel, 0, 0);
+            IMC_Pkg.PKG_IMC_MoveAbs(Global.g_handle, flight_level, svel, tvel, 0, 1);
+            IMC_Pkg.PKG_IMC_MoveAbs(Global.g_handle, flight_level, svel, tvel, 0, 2);
         }
 
         private void button2_MouseUp(object sender, MouseEventArgs e)
@@ -569,9 +571,9 @@ namespace Example
             IMC_Pkg.PKG_IMC_MoveVel(Global.g_handle, 0, 0, 0);
             IMC_Pkg.PKG_IMC_MoveVel(Global.g_handle, 0, 0, 1);
             IMC_Pkg.PKG_IMC_MoveVel(Global.g_handle, 0, 0, 2);
-            IMC_Pkg.PKG_IMC_MoveAbs(Global.g_handle, 70000, svel, tvel, 0, 0);
-            IMC_Pkg.PKG_IMC_MoveAbs(Global.g_handle, 70000, svel, tvel, 0, 1);
-            IMC_Pkg.PKG_IMC_MoveAbs(Global.g_handle, 70000, svel, tvel, 0, 2);
+            IMC_Pkg.PKG_IMC_MoveAbs(Global.g_handle, flight_level, svel, tvel, 0, 0);
+            IMC_Pkg.PKG_IMC_MoveAbs(Global.g_handle, flight_level, svel, tvel, 0, 1);
+            IMC_Pkg.PKG_IMC_MoveAbs(Global.g_handle, flight_level, svel, tvel, 0, 2);
         }
 
         private void button3_MouseUp(object sender, MouseEventArgs e)
@@ -587,9 +589,9 @@ namespace Example
             IMC_Pkg.PKG_IMC_MoveVel(Global.g_handle, 0, 0, 0);
             IMC_Pkg.PKG_IMC_MoveVel(Global.g_handle, 0, 0, 1);
             IMC_Pkg.PKG_IMC_MoveVel(Global.g_handle, 0, 0, 2);
-            IMC_Pkg.PKG_IMC_MoveAbs(Global.g_handle, 70000, svel, tvel, 0, 0);
-            IMC_Pkg.PKG_IMC_MoveAbs(Global.g_handle, 70000, svel, tvel, 0, 1);
-            IMC_Pkg.PKG_IMC_MoveAbs(Global.g_handle, 70000, svel, tvel, 0, 2);
+            IMC_Pkg.PKG_IMC_MoveAbs(Global.g_handle, flight_level, svel, tvel, 0, 0);
+            IMC_Pkg.PKG_IMC_MoveAbs(Global.g_handle, flight_level, svel, tvel, 0, 1);
+            IMC_Pkg.PKG_IMC_MoveAbs(Global.g_handle, flight_level, svel, tvel, 0, 2);
         }
 
         private void button4_MouseUp(object sender, MouseEventArgs e)
@@ -605,9 +607,9 @@ namespace Example
             IMC_Pkg.PKG_IMC_MoveVel(Global.g_handle, 0, 0, 0);
             IMC_Pkg.PKG_IMC_MoveVel(Global.g_handle, 0, 0, 1);
             IMC_Pkg.PKG_IMC_MoveVel(Global.g_handle, 0, 0, 2);
-            IMC_Pkg.PKG_IMC_MoveAbs(Global.g_handle, 70000, svel, tvel, 0, 0);
-            IMC_Pkg.PKG_IMC_MoveAbs(Global.g_handle, 70000, svel, tvel, 0, 1);
-            IMC_Pkg.PKG_IMC_MoveAbs(Global.g_handle, 70000, svel, tvel, 0, 2);
+            IMC_Pkg.PKG_IMC_MoveAbs(Global.g_handle, flight_level, svel, tvel, 0, 0);
+            IMC_Pkg.PKG_IMC_MoveAbs(Global.g_handle, flight_level, svel, tvel, 0, 1);
+            IMC_Pkg.PKG_IMC_MoveAbs(Global.g_handle, flight_level, svel, tvel, 0, 2);
         }
 
         private void button5_MouseUp(object sender, MouseEventArgs e)
@@ -623,6 +625,7 @@ namespace Example
             IMC_Pkg.PKG_IMC_MoveVel(Global.g_handle, 0, 0, 0);
             IMC_Pkg.PKG_IMC_MoveVel(Global.g_handle, 0, 0, 1);
             IMC_Pkg.PKG_IMC_MoveVel(Global.g_handle, 0, 0, 2);
+            flight_level = m_encp.Max();
         }
 
         private void button6_MouseUp(object sender, MouseEventArgs e)
@@ -638,6 +641,7 @@ namespace Example
             IMC_Pkg.PKG_IMC_MoveVel(Global.g_handle, 0, 0, 0);
             IMC_Pkg.PKG_IMC_MoveVel(Global.g_handle, 0, 0, 1);
             IMC_Pkg.PKG_IMC_MoveVel(Global.g_handle, 0, 0, 2);
+            flight_level = m_encp.Max();
         }
     }
 }

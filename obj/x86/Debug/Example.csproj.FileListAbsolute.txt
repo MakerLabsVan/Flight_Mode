@@ -57,13 +57,9 @@ C:\Users\Huancheng Yang\Desktop\Motor_controller\IMCNet_V3.3\IMCNet_V3.3\IMCApp\
 C:\Users\Huancheng Yang\Desktop\Motor_controller\IMCNet_V3.3\IMCNet_V3.3\IMCApp\Example\C#_2010_Example\Example\obj\x86\Debug\Example.P2P.resources
 C:\Users\Huancheng Yang\Desktop\Motor_controller\IMCNet_V3.3\IMCNet_V3.3\IMCApp\Example\C#_2010_Example\Example\obj\x86\Debug\Example.Properties.Resources.resources
 C:\Users\Huancheng Yang\Desktop\Motor_controller\IMCNet_V3.3\IMCNet_V3.3\IMCApp\Example\C#_2010_Example\Example\obj\x86\Debug\Example.csproj.GenerateResource.Cache
-C:\Users\Huancheng Yang\Desktop\Motor_controller\New folder (2)\C#_2010_Example\Example\obj\x86\Debug\Example.exe
-C:\Users\Huancheng Yang\Desktop\Motor_controller\New folder (2)\C#_2010_Example\Example\obj\x86\Debug\Example.pdb
 C:\Users\Huancheng Yang\Desktop\Motor_controller\New folder (2)\C#_2010_Example\Example\bin\Debug\IMC_cfg.ini
 C:\Users\Huancheng Yang\Desktop\Motor_controller\New folder (2)\C#_2010_Example\Example\bin\Debug\IMCnet.dll
 C:\Users\Huancheng Yang\Desktop\Motor_controller\New folder (2)\C#_2010_Example\Example\bin\Debug\IMC_Pkg.dll
-C:\Users\Huancheng Yang\Desktop\Motor_controller\New folder (2)\C#_2010_Example\Example\bin\Debug\Example.exe
-C:\Users\Huancheng Yang\Desktop\Motor_controller\New folder (2)\C#_2010_Example\Example\bin\Debug\Example.pdb
 C:\Users\Huancheng Yang\Desktop\Motor_controller\New folder (2)\C#_2010_Example\Example\obj\x86\Debug\Example.csprojResolveAssemblyReference.cache
 C:\Users\Huancheng Yang\Desktop\Motor_controller\New folder (2)\C#_2010_Example\Example\obj\x86\Debug\Example.Cfg.resources
 C:\Users\Huancheng Yang\Desktop\Motor_controller\New folder (2)\C#_2010_Example\Example\obj\x86\Debug\Example.Event.resources
@@ -77,3 +73,7 @@ C:\Users\Huancheng Yang\Desktop\Motor_controller\New folder (2)\C#_2010_Example\
 C:\Users\Huancheng Yang\Desktop\Motor_controller\New folder (2)\C#_2010_Example\Example\obj\x86\Debug\Example.Properties.Resources.resources
 C:\Users\Huancheng Yang\Desktop\Motor_controller\New folder (2)\C#_2010_Example\Example\obj\x86\Debug\Example.csproj.GenerateResource.Cache
 C:\Users\Huancheng Yang\Desktop\Motor_controller\New folder (2)\C#_2010_Example\Example\obj\x86\Debug\Example.Flight.resources
+C:\Users\Huancheng Yang\Desktop\Motor_controller\New folder (2)\C#_2010_Example\Example\bin\Debug\Flight_Control.exe
+C:\Users\Huancheng Yang\Desktop\Motor_controller\New folder (2)\C#_2010_Example\Example\bin\Debug\Flight_Control.pdb
+C:\Users\Huancheng Yang\Desktop\Motor_controller\New folder (2)\C#_2010_Example\Example\obj\x86\Debug\Flight_Control.exe
+C:\Users\Huancheng Yang\Desktop\Motor_controller\New folder (2)\C#_2010_Example\Example\obj\x86\Debug\Flight_Control.pdb
