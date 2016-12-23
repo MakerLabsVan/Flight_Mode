@@ -236,11 +236,11 @@ namespace Example
                         break;
                     case Keys.Q:
                         IMC_Pkg.PKG_IMC_SetAccel(Global.g_handle, acc, acc, 3);
-                        IMC_Pkg.PKG_IMC_MoveVel(Global.g_handle, svel, tvel, 3);
+                        IMC_Pkg.PKG_IMC_MoveVel(Global.g_handle, -svel, -tvel, 3);
                         break;
                     case Keys.E:
                         IMC_Pkg.PKG_IMC_SetAccel(Global.g_handle, acc, acc, 3);
-                        IMC_Pkg.PKG_IMC_MoveVel(Global.g_handle, -svel, -tvel, 3);
+                        IMC_Pkg.PKG_IMC_MoveVel(Global.g_handle, svel, tvel, 3);
                         break;
 
                 }
@@ -697,7 +697,7 @@ namespace Example
             svel = Convert.ToDouble(textBox2.Text);
             tvel = Convert.ToDouble(textBox3.Text);
             IMC_Pkg.PKG_IMC_SetAccel(Global.g_handle, acc, acc, 3);
-            IMC_Pkg.PKG_IMC_MoveVel(Global.g_handle, svel, tvel, 3);
+            IMC_Pkg.PKG_IMC_MoveVel(Global.g_handle, -svel, -tvel, 3);
         }
 
         private void button7_MouseUp(object sender, MouseEventArgs e)
@@ -713,7 +713,7 @@ namespace Example
             svel = Convert.ToDouble(textBox2.Text);
             tvel = Convert.ToDouble(textBox3.Text);
             IMC_Pkg.PKG_IMC_SetAccel(Global.g_handle, acc, acc, 3);
-            IMC_Pkg.PKG_IMC_MoveVel(Global.g_handle, -svel, -tvel, 3);
+            IMC_Pkg.PKG_IMC_MoveVel(Global.g_handle, svel, tvel, 3);
         }
 
         private void button8_MouseUp(object sender, MouseEventArgs e)

@@ -276,7 +276,7 @@
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(150, 150);
             this.button7.TabIndex = 20;
-            this.button7.Text = "CW";
+            this.button7.Text = "CCW";
             this.button7.UseVisualStyleBackColor = true;
             this.button7.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button7_MouseDown);
             this.button7.MouseUp += new System.Windows.Forms.MouseEventHandler(this.button7_MouseUp);
@@ -288,7 +288,7 @@
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(150, 150);
             this.button8.TabIndex = 21;
-            this.button8.Text = "CCW";
+            this.button8.Text = "CW";
             this.button8.UseVisualStyleBackColor = true;
             this.button8.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button8_MouseDown);
             this.button8.MouseUp += new System.Windows.Forms.MouseEventHandler(this.button8_MouseUp);

@@ -9,7 +9,7 @@ This program is designed to control the VR platfrom and perform basic moving com
 .NetFramework
 
 #Steps
-##Turn on Procedure
+##Start Procedure
 1. Plug on the power cord
 2. Push the green button
 3. Push the power button for computer 1 
@@ -31,12 +31,27 @@ This program is designed to control the VR platfrom and perform basic moving com
 15. Go back to the program on the slave computer
 16. Using keyboard or mouse to control the platform
 
-##Turn off Procedure
+##Exit Procedure
 1. Close the flight mode window
 2. Click the disconnect button
 3. Close the program
 4. Go back to the master computer
 5. Close the Zhuoyuan Movie program
 
+
+#FAQ
+1. What should I do if the direction get reversed?
+# A: Close both two programs and computers. Push the red button(STOP) on the platform. Wait for at least 10s, then execute the turn on procedure.
+
+2. How can I home the platform?
+# A: First, make sure the actual moving direction corresponds to the encoder data on the program. If not, see FAQ1 first. 
+#    Then, click the Home button on the main menu. 
+#    After that, select the axis that is not homed, and choose the home direction (should be negative). You can also adjust home speed there
+#    Click "Home" button and wait for the axis to go back to home position.
+#    When the axis reaches zero, click the Stop Homing button.
+#    Click the set pos button to set its current position to zero
+#    select another axis and complete the steps above
+
+Note: You do not need to home the 4th axis(the rotary axis)
 
 
