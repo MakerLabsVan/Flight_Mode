@@ -18,12 +18,29 @@ namespace Example
         public Flight()
         {
             InitializeComponent();
+            //Flightalert.Text += "===========================" + Environment.NewLine;
+            Flightalert.Text += "Welcome to the Flight Mode!" + Environment.NewLine;
+            Flightalert.Text += "Press Z to raise the platform" + Environment.NewLine;
+            Flightalert.Text += "Press X to lower the platform" + Environment.NewLine;
+            Flightalert.Text += "Press W to push down" + Environment.NewLine;
+            Flightalert.Text += "Press S to pull up" + Environment.NewLine;
+            Flightalert.Text += "Press A to turn left" + Environment.NewLine;
+            Flightalert.Text += "Press D to turn right" + Environment.NewLine;
+            Flightalert.Text += "You can also use mouse to control" + Environment.NewLine + Environment.NewLine; 
+            Flightalert.Text += "If the control is reversed" + Environment.NewLine;
+            Flightalert.Text += "Please turn off both two computers" + Environment.NewLine;
+            Flightalert.Text += "Then push the stop button" + Environment.NewLine;
+            Flightalert.Text += "Wait for at least 10s" + Environment.NewLine;
+            Flightalert.Text += "Then do the start steps again" + Environment.NewLine + Environment.NewLine;
+            Flightalert.Text += "Hope you enjoy the flight!" + Environment.NewLine;
+            Flightalert.Text += "===========================" + Environment.NewLine;
+
         }
 
         private void Flight_KeyDown(object sender, KeyEventArgs e)
         {
             double acc, svel, tvel;
-            if ((e.KeyCode == Keys.W) || (e.KeyCode == Keys.A) || (e.KeyCode == Keys.S) || (e.KeyCode == Keys.D) || (e.KeyCode == Keys.Z) || (e.KeyCode == Keys.X))
+            if ((e.KeyCode == Keys.W) || (e.KeyCode == Keys.A) || (e.KeyCode == Keys.S) || (e.KeyCode == Keys.D) || (e.KeyCode == Keys.Z) || (e.KeyCode == Keys.X) || (e.KeyCode == Keys.Q) || (e.KeyCode == Keys.E))
             {
                 IMC_Pkg.PKG_IMC_GetEncp(Global.g_handle, m_encp, Global.g_naxis);
                 acc = Convert.ToDouble(textBox1.Text);
@@ -217,8 +234,13 @@ namespace Example
                         IMC_Pkg.PKG_IMC_MoveAbs(Global.g_handle, 0, svel, tvel, 0, 1);
                         IMC_Pkg.PKG_IMC_MoveAbs(Global.g_handle, 0, svel, tvel, 0, 2);
                         break;
+                    case Keys.Q:
+                        IMC_Pkg.PKG_IMC_SetAccel(Global.g_handle, acc, acc, 3);
+                        IMC_Pkg.PKG_IMC_MoveVel(Global.g_handle, svel, tvel, 3);
+                        break;
                     case Keys.E:
-                        Flightalert.Text += "Hello!";
+                        IMC_Pkg.PKG_IMC_SetAccel(Global.g_handle, acc, acc, 3);
+                        IMC_Pkg.PKG_IMC_MoveVel(Global.g_handle, -svel, -tvel, 3);
                         break;
 
                 }
@@ -228,7 +250,7 @@ namespace Example
         private void Flight_KeyUp(object sender, KeyEventArgs e)
         {
             double acc, svel, tvel;
-            if ((e.KeyCode == Keys.W) || (e.KeyCode == Keys.A) || (e.KeyCode == Keys.S) || (e.KeyCode == Keys.D) || (e.KeyCode == Keys.Z) || (e.KeyCode == Keys.X))
+            if ((e.KeyCode == Keys.W) || (e.KeyCode == Keys.A) || (e.KeyCode == Keys.S) || (e.KeyCode == Keys.D) || (e.KeyCode == Keys.Z) || (e.KeyCode == Keys.X) || (e.KeyCode == Keys.Q) || (e.KeyCode == Keys.E))
             {
                 IMC_Pkg.PKG_IMC_GetEncp(Global.g_handle, m_encp, Global.g_naxis);
                 acc = Convert.ToDouble(textBox1.Text);
@@ -286,6 +308,12 @@ namespace Example
                         IMC_Pkg.PKG_IMC_MoveVel(Global.g_handle, 0, 0, 2);
                         flight_level = m_encp.Max();
                         break;
+                    case Keys.Q:
+                        IMC_Pkg.PKG_IMC_MoveVel(Global.g_handle, 0, 0, 3);
+                        break;
+                    case Keys.E:
+                        IMC_Pkg.PKG_IMC_MoveVel(Global.g_handle, 0, 0, 3);
+                        break;
                 }
             }
         }
@@ -331,6 +359,12 @@ namespace Example
                     textBox1.Text = "10";
                     return;
                 }
+                if (Convert.ToDouble(textBox1.Text) < 0 || Convert.ToDouble(textBox1.Text) > Convert.ToDouble(textBox3.Text))
+                {
+                    MessageBox.Show("Valve not valid, must be between 0 and target vel");
+                    textBox1.Text = "10";
+                    return;
+                }
 
             }
             //If it get's here it's a valid number
@@ -345,6 +379,12 @@ namespace Example
                 if (!char.IsNumber(tString[i]))
                 {
                     MessageBox.Show("Please enter a valid number");
+                    textBox2.Text = "10";
+                    return;
+                }
+                if (Convert.ToDouble(textBox2.Text) < 0 || Convert.ToDouble(textBox2.Text) > Convert.ToDouble(textBox3.Text))
+                {
+                    MessageBox.Show("Valve not valid, must be between 0 and target vel");
                     textBox2.Text = "10";
                     return;
                 }
@@ -372,7 +412,12 @@ namespace Example
                     textBox3.Text = "20";
                     return;
                 }
-
+                if (Convert.ToDouble(textBox3.Text) > 80 )
+                {
+                    MessageBox.Show("Maximum speed is 80");
+                    textBox3.Text = "20";
+                    return;
+                }
             }
         }
 
@@ -642,6 +687,38 @@ namespace Example
             IMC_Pkg.PKG_IMC_MoveVel(Global.g_handle, 0, 0, 1);
             IMC_Pkg.PKG_IMC_MoveVel(Global.g_handle, 0, 0, 2);
             flight_level = m_encp.Max();
+        }
+
+        private void button7_MouseDown(object sender, MouseEventArgs e)
+        {
+            double acc, svel, tvel;
+            IMC_Pkg.PKG_IMC_GetEncp(Global.g_handle, m_encp, Global.g_naxis);
+            acc = Convert.ToDouble(textBox1.Text);
+            svel = Convert.ToDouble(textBox2.Text);
+            tvel = Convert.ToDouble(textBox3.Text);
+            IMC_Pkg.PKG_IMC_SetAccel(Global.g_handle, acc, acc, 3);
+            IMC_Pkg.PKG_IMC_MoveVel(Global.g_handle, svel, tvel, 3);
+        }
+
+        private void button7_MouseUp(object sender, MouseEventArgs e)
+        {
+            IMC_Pkg.PKG_IMC_MoveVel(Global.g_handle, 0, 0, 3);
+        }
+
+        private void button8_MouseDown(object sender, MouseEventArgs e)
+        {
+            double acc, svel, tvel;
+            IMC_Pkg.PKG_IMC_GetEncp(Global.g_handle, m_encp, Global.g_naxis);
+            acc = Convert.ToDouble(textBox1.Text);
+            svel = Convert.ToDouble(textBox2.Text);
+            tvel = Convert.ToDouble(textBox3.Text);
+            IMC_Pkg.PKG_IMC_SetAccel(Global.g_handle, acc, acc, 3);
+            IMC_Pkg.PKG_IMC_MoveVel(Global.g_handle, -svel, -tvel, 3);
+        }
+
+        private void button8_MouseUp(object sender, MouseEventArgs e)
+        {
+            IMC_Pkg.PKG_IMC_MoveVel(Global.g_handle, 0, 0, 3);
         }
     }
 }

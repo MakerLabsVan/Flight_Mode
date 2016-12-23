@@ -260,8 +260,100 @@ namespace Example
                 {
                     IMC_Pkg.PKG_IMC_MoveVel(Global.g_handle, 0, 0, i);
                     Axisalert.Text += "Axis Min Limit Triggered!" + Environment.NewLine;
+
                 }
 
+            }
+        }
+
+        private void textBox1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (!((e.KeyCode >= Keys.D0 && e.KeyCode <= Keys.D9) || (e.KeyCode == Keys.Back)))
+            {
+                label1.Focus();
+            }
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            string tString = textBox1.Text;
+            if (tString.Trim() == "") return;
+            for (int i = 0; i < tString.Length; i++)
+            {
+                if (!char.IsNumber(tString[i]))
+                {
+                    MessageBox.Show("Please enter a valid number");
+                    textBox1.Text = "10";
+                    return;
+                }
+                if (Convert.ToDouble(textBox1.Text) < 0 || Convert.ToDouble(textBox1.Text) > Convert.ToDouble(textBox3.Text))
+                {
+                    MessageBox.Show("Valve not valid, must be between 0 and target vel");
+                    textBox1.Text = "10";
+                    return;
+                }
+
+            }
+            //If it get's here it's a valid number
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+            string tString = textBox2.Text;
+            if (tString.Trim() == "") return;
+            for (int i = 0; i < tString.Length; i++)
+            {
+                if (!char.IsNumber(tString[i]))
+                {
+                    MessageBox.Show("Please enter a valid number");
+                    textBox2.Text = "10";
+                    return;
+                }
+                if (Convert.ToDouble(textBox2.Text) < 0 || Convert.ToDouble(textBox2.Text) > Convert.ToDouble(textBox3.Text))
+                {
+                    MessageBox.Show("Valve not valid, must be between 0 and target vel");
+                    textBox2.Text = "10";
+                    return;
+                }
+
+            }
+        }
+
+        private void textBox2_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (!((e.KeyCode >= Keys.D0 && e.KeyCode <= Keys.D9) || (e.KeyCode == Keys.Back)))
+            {
+                label1.Focus();
+            }
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+            string tString = textBox3.Text;
+            if (tString.Trim() == "") return;
+            for (int i = 0; i < tString.Length; i++)
+            {
+                if (!char.IsNumber(tString[i]))
+                {
+                    MessageBox.Show("Please enter a valid number");
+                    textBox3.Text = "20";
+                    return;
+                }
+                if (Convert.ToDouble(textBox3.Text) > 80 )
+                {
+                    MessageBox.Show("Maximum speed is 80");
+                    textBox3.Text = "20";
+                    return;
+                }
+
+            }
+        }
+
+        private void textBox3_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (!((e.KeyCode >= Keys.D0 && e.KeyCode <= Keys.D9) || (e.KeyCode == Keys.Back)))
+            {
+                label1.Focus();
             }
         }
     }

@@ -43,8 +43,15 @@ namespace Example
                     str = System.Text.Encoding.Default.GetString(info, i * 256, 256);
 			        comboBox1.Items.Add(str);
 		        }
-                if (comboBox1.Items.Count > 0)
-                    comboBox1.SelectedItem = comboBox1.SelectedIndex = 0; 
+                if (comboBox1.Items.Count > 1)
+                {
+                    //comboBox1.SelectedItem = comboBox1.SelectedIndex = 0;
+                    comboBox1.SelectedIndex = 1;
+                }
+                else
+                {
+                    comboBox1.SelectedItem = comboBox1.SelectedIndex = 0;
+                }
 	        }
 		    for(i=0; i<64; i++)
             {
@@ -78,6 +85,7 @@ namespace Example
 		        {
 			        button1.Text = ("Close Device");
                     i = IMC_Pkg.PKG_IMC_InitCfg(Global.g_handle);
+                    label3.Text = "Please disconnect the device first, then close the Zhuoyuan Movie Player!";
 			        if(i == 0)
 			        {
 				        err = IMC_Pkg.PKG_IMC_GetFunErrStr();
