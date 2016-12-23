@@ -9,19 +9,20 @@ This program is designed to control the VR platfrom and perform basic moving com
 .NetFramework
 
 #Steps
-
-
-When turn on
+##Turn on Procedure
 1. Plug on the power cord
 2. Push the green button
-3. Push the power button for computer 1
+3. Push the power button for computer 1 
 ![Power Button](Power_button.jpg)
+
 4. Push the power button on the master computer
 5. Wait for both two computers to start
 6. Double-Click the VNC software
 ![VNC Program](VNC.jpg)
+
 7. Set IP to 192.168.1.2 
 ![Set IP](Set_IP.jpg)
+
 8. Connect
 9. Open the program on the slave computer
 10. Connect the device
@@ -29,11 +30,12 @@ When turn on
 12. Go back to the desktop of the master computer
 13. Open the Zhuoyuan Movie program
 ![Zhuoyuan Program](Movie_player.jpg)
+
 14. If you see hear the "ka-da", then the motor controllers are turned on
 15. Go back to the program on the slave computer
 16. Using keyboard or mouse to control the platform
 
-When turn off
+##Turn off Procedure
 1. Close the flight mode window
 2. Click the disconnect button
 3. Close the program
