@@ -40,10 +40,10 @@ This program is designed to control the VR platfrom and perform basic moving com
 
 
 #FAQ
-1. What should I do if the direction get reversed?
+### What should I do if the direction get reversed?
 * A: Close both two programs and computers. Push the red button(STOP) on the platform. Wait for at least 10s, then execute the turn on procedure.
 
-2. How can I home the platform?
+### How can I home the platform?
 * A: First, make sure the actual moving direction corresponds to the encoder data on the program. If not, see FAQ1 first. 
 *    Then, click the Home button on the main menu. 
 *    After that, select the axis that is not homed, and choose the Searching Home Direction (should be negative). You can also adjust home speed there
