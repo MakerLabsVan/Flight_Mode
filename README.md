@@ -46,7 +46,7 @@ This program is designed to control the VR platfrom and perform basic moving com
 2. How can I home the platform?
 # A: First, make sure the actual moving direction corresponds to the encoder data on the program. If not, see FAQ1 first. 
 #    Then, click the Home button on the main menu. 
-#    After that, select the axis that is not homed, and choose the home direction (should be negative). You can also adjust home speed there
+#    After that, select the axis that is not homed, and choose the Searching Home Direction (should be negative). You can also adjust home speed there
 #    Click "Home" button and wait for the axis to go back to home position.
 #    When the axis reaches zero, click the Stop Homing button.
 #    Click the set pos button to set its current position to zero
