@@ -12,9 +12,9 @@ This program is designed to control the VR platfrom and perform basic moving com
 ##Start Procedure
 1. Plug on the power cord
 2. Push the green button
-3. Push the power button for computer 1 
+3. Push the power button for computer 1(It's above the green button)
 ![Power Button](Power_button.jpg)
-4. Push the power button on the master computer
+4. Push the power button on the master computer(on the right side of the computer)
 5. Wait for both two computers to start
 6. Double-Click the VNC software
 ![VNC Program](VNC.jpg)
@@ -22,8 +22,8 @@ This program is designed to control the VR platfrom and perform basic moving com
 ![Set IP](Set_IP.jpg)
 8. Connect
 9. Open the program on the slave computer
-10. Connect the device
-11. Choose Flight Mode
+10. Click the "Open the device" button
+11. Click the "Flight Mode" button
 12. Go back to the desktop of the master computer
 13. Open the Zhuoyuan Movie program
 ![Zhuoyuan Program](Movie_player.jpg)
@@ -36,7 +36,7 @@ This program is designed to control the VR platfrom and perform basic moving com
 2. Click the disconnect button
 3. Close the program
 4. Go back to the master computer
-5. Close the Zhuoyuan Movie program
+5. Close the Zhuoyuan Movie program (Click the power off button then the exit button)
 
 
 #FAQ
