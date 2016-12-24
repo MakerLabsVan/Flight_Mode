@@ -27,7 +27,7 @@ namespace Example
             }
             comboBox1.SelectedItem = comboBox1.SelectedIndex = 0;
             comboBox2.SelectedItem = comboBox2.SelectedIndex = 0;
-            comboBox3.SelectedItem = comboBox3.SelectedIndex = 0;
+            comboBox3.SelectedItem = comboBox3.SelectedIndex = 1;
             comboBox4.SelectedItem = comboBox4.SelectedIndex = 0;
 
         }
