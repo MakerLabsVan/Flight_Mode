@@ -3,7 +3,7 @@
 This program is designed to control the VR platfrom and perform basic moving commands for a single axis or comlicated motions (multiaxes) to imitate flying
 
 #Hardware Required:
-9DVR platfrom
+[9DVR platfrom](http://www.xd5d.com/9dvr/)
 
 #Software Required:
 .NetFramework
