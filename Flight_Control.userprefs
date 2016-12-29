@@ -1,7 +1,7 @@
 ﻿<Properties StartupConfiguration="{9FE4CD6D-518D-4B83-9635-C1A03764E7AE}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="Flight.cs">
     <Files>
-      <File FileName="Flight.cs" Line="190" Column="31" />
+      <File FileName="Flight.cs" Line="13" Column="36" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
