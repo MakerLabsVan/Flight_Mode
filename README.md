@@ -22,7 +22,7 @@ Controls the 9DVR motion platfrom and performs single axis or multi-axis motions
 ![Set IP](Set_IP.jpg)
 8. Connect
 9. Open the Flight_Mode program on the slave computer
-10. Click the "Open device" button
+10. Click the "Connect device" button
 11. Switch to the master computer, and open the Zhuoyuan Movie program
 ![Zhuoyuan Program](Movie_player.jpg)
 12. Wait for approximate 7 seconds, until the motor controllers are turned on
